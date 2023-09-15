@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="columns is-centered">
+        <div class="box column is-one-third">
+            <h1 class="title has-text-centered">
+                Typing Test
+            </h1>
+            <p class="has-text-centered"><span [class]="generateclass(letter,useralphabets[i])"
+                    *ngFor="let letter of generatedalphabets.split(''); let i=index;">{{letter}}</span></p>
+            <div class="field">
+                <input type="text" class="input" (input)="checkletter($any($event.target).value)" [value]="useralphabets">
+            </div>
+            <div class="control">
+                <button class="button" (click)="randomletters()">Start challenge</button>
+            </div>
+            <div class="box has-text-centered"
+                *ngIf="(useralphabets&&generatedalphabets)&&useralphabets==generatedalphabets">
+                <h1 class="title">Correct</h1>
+            </div>
+        </div>
+    </div>
+</div>

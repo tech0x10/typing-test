@@ -1,0 +1,33 @@
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+    span {
+        font-size: 1.6rem;
+        
+    }
+}
+
+.control {
+    padding-bottom: 1rem;
+
+    .button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.correct {
+    color: rgb(29, 109, 29);
+    font-weight: 500;
+}
+
+.notcorrect {
+    color: red;
+    font-weight: 500;
+}
+
+.default {
+    color: black;
+}
